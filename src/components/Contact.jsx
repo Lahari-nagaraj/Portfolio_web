@@ -1,28 +1,40 @@
-import React, {useState,useEffect , useRef} from 'react';
-import {motion} from 'framer-motion';
-import emailjs from '@emailjs/browser';
+import React, { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
-import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
-import { SectionWrapper } from '../hoc';
-import { slideIn } from '../utils/motion';
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '', 
-  })
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const [loading,setloading] = useState(false);
-  const handleChange = (e) => {}
-  const handleSubmit = (e) => {}
+  const [loading, setloading] = useState(false);
+  const handleChange = (e) => {};
+  const handleSubmit = (e) => {};
+
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="flex flex-col md:flex-row items-center justify-center w-full h-screen gap-10 p-10">
+      {/* Earth Model - Corrected Size & Position */}
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="w-full md:w-[50%] h-[350px] md:h-[500px] flex justify-center"
+      >
+        <div className="w-[80%] md:w-full h-full"> {/* Ensures proper scaling */}
+          <EarthCanvas />
+        </div>
+      </motion.div>
+
+      {/* Contact Form - Stays Below on Small Screens */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="w-full md:w-[50%] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in Touch!</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -39,48 +51,42 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="Whats your name?"
+              placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
+            <span className="text-white font-medium mb-4">Your Email</span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="Whats your email?"
+              placeholder="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
-            rows="7"
+              rows="7"
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="Whats do you want to say?"
+              placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
-          <button type="submit"
-          className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>
-            {loading ? 'Sending...': 'Send'}
+          <button
+            type="submit"
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+          >
+            {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>
-        <motion.div 
-        variants={slideIn('right', "tween",0.2,1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
-          <EarthCanvas/>
-          
-        </motion.div>
-
-
     </div>
   );
-}
+};
 
-export default SectionWrapper(Contact, "contact")
+export default SectionWrapper(Contact, "contact");
