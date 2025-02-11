@@ -1,13 +1,13 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import CanvasLoader from "../Loader"; // Ensure this path is correct
+import CanvasLoader from "../Loader"; 
 
 const Computers = ({isMobile}) => {
-  // Load the 3D model
+  
   const { scene, nodes, materials } = useGLTF("/desktop_pc/scene.gltf");
 
-  // Log the scene to ensure it's loaded correctly
+  
   console.log("Loaded model:", scene);
 
   return (
@@ -29,8 +29,8 @@ const Computers = ({isMobile}) => {
       {/* The model */}
       <primitive
         object={scene}
-        scale={isMobile ? 0.5 : 0.6} // Adjust the size of the model
-        position={isMobile ? [0, -4, -1.5] : [0, -3.3, -1.5]} // Adjust position below text
+        scale={isMobile ? 0.5 : 0.85} // Adjust the size of the model
+        position={isMobile ? [0, -6, -1.5] : [0, -4, -1.5]} // Adjust position below text
         rotation={[-0.01, -0.2, -0.1]} // Adjust rotation
       />
     </mesh>

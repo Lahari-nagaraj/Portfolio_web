@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="xs:w-[242px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -40,14 +40,14 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
-        I am a tech enthusiast with experience in web development, event
-        management, and community engagement. Skilled in technologies like
-        Node.js, Express, and PostgreSQL, I enjoy creating impactful projects
-        and collaborating on innovative ideas. As an active IEEE member and
-        volunteer, I bring a blend of technical expertise and leadership to
-        everything I pursue.
+        I'm a tech enthusiast,exploring web development and AI while
+        constantly learning and experimenting. Beyond coding, I enjoy event
+        management, chess keeps me sharp and writing fuels my creativity.
+        Novels keep me alive, offering a world to escape and explore. I
+        bring a blend of technical expertise and leadership to everything I
+        pursue, always eager to take on new challenges and grow along the way..
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

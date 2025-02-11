@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+
+ 
+
 } from "../assets";
 
 export const navLinks = [
@@ -42,16 +45,16 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front End Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Back End Developer",
+    icon: backend,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "AI Enthusiast",
+    icon: mobile,
   },
   {
     title: "Content Creator",
@@ -116,56 +119,53 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Education",
+    company_name: "My Academic Journey",
     icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    iconBg: "#ffffff",
+    
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      " I completed my schooling at Sri KV English School (ICSE) [2015-2021], where I built a strong foundation in academics",
+      " I pursued my higher secondary education at Presidency PU College [2021-2023], where I strengthened my analytical thinking",
+      " Currently, I am pursuing a Bachelor's degree in Computer Science and Engineering at University Visvesvaraya College of Engineering, Bangalore",
+      "  My journey at UVCE has been exciting, filled with opportunities to learn, collaborate, and grow. The exposure to different fields has helped me broaden my perspective beyond textbooks",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Technical Challenges and Beyond",
+    company_name: "Building, Competing, Networking..",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      " I am a part of IEEE UVCE, a technical club that provides me with exposure to organizing events, collaborating with peers, and exploring various domains beyond academics.",
+  " I am also involved with Marvel UVCE, an R&D lab where I have delved into the AI/ML domain, embracing self-learning and deep exploration of cutting-edge technologies.",
+  "Additionally, I am a part of VFX  with UVCE Chronicles, allowing me to enhance my creative skills and storytelling through visuals.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Interests and Hobbies",
+    company_name: "What fuels Me..",
     icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    iconBg: "#ffffff",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+  " I find joy in chess, writing, and reading novels each of them offering a unique escape. Chess sharpens my strategy, writing helps me express my thoughts and books let me live a thousand lives through their stories.",
+  " Creativity fuels me, whether it's through craftwork, music or storytelling. These passions keep me inspired and constantly learning."
+]
+
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Reach Out",
+    company_name: "Communication Hub",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+  "📞 Phone: +91 86609 65642",  
+  "📧 Email: laharinagaraj9876@gmail.com",  
+  "💻 GitHub: https://github.com/Lahari-nagaraj",  
+  "🔗 LinkedIn: www.linkedin.com/in/lahari-priya-n-62bb822a2",  
+  "📸 Instagram: lahari_nagaraj",  
+]
+
   },
 ];
 
