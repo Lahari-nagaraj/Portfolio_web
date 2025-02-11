@@ -29,9 +29,9 @@ const Computers = ({isMobile}) => {
       {/* The model */}
       <primitive
         object={scene}
-        scale={isMobile ? 0.5 : 0.85} // Adjust the size of the model
-        position={isMobile ? [0, -6, -1.5] : [0, -4, -1.5]} // Adjust position below text
-        rotation={[-0.01, -0.2, -0.1]} // Adjust rotation
+        scale={isMobile ? 0.5 : 0.85} 
+        position={isMobile ? [0, -6, -1.5] : [0, -4, -1.5]} 
+        rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   );
@@ -41,16 +41,16 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile]= useState(false);
 
   useEffect(() =>{
-    // add a listener for changes to the screen size
+
     const mediaQuery = window.matchMedia('(max-width:500px)');
-    //set initial value of ismobile state variable
+    
     setIsMobile(mediaQuery.matches);
-    //define callback function to handle changes in media query
+    
 
     const handleMediaQueryChange=(event) => {
       setIsMobile(event.matches);
     }
-    //Add callback function as a listener for changes to media query
+    
     mediaQuery.addEventListener('change',handleMediaQueryChange);
     return()=> {
       mediaQuery.removeEventListener('change',handleMediaQueryChange);
@@ -60,12 +60,12 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [25, 4, 5], fov: 25 }} // Adjust camera position to ensure the model is visible
+      camera={{ position: [25, 4, 5], fov: 25 }} 
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          enableZoom={false} // Disable zoom
+          enableZoom={false} 
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />

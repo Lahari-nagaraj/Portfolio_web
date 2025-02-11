@@ -159,11 +159,11 @@ const experiences = [
     icon: meta,
     iconBg: "#E6DEDD",
     points: [
-  "📞 Phone: +91 86609 65642",  
-  "📧 Email: laharinagaraj9876@gmail.com",  
-  "💻 GitHub: https://github.com/Lahari-nagaraj",  
-  "🔗 LinkedIn: www.linkedin.com/in/lahari-priya-n-62bb822a2",  
-  "📸 Instagram: lahari_nagaraj",  
+  " Phone: +91 86609 65642",  
+  " Email: laharinagaraj9876@gmail.com",  
+  " GitHub: https://github.com/Lahari-nagaraj",  
+  " LinkedIn: www.linkedin.com/in/lahari-priya-n-62bb822a2",  
+  " Instagram: lahari_nagaraj",  
 ]
 
   },
@@ -171,12 +171,13 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    
+    
   },
   {
     testimonial:
@@ -198,9 +199,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "TO-DO List",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This is a simple to-do list app built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to add, update, delete, and mark tasks as complete. The backend manages data storage and retrieval, while the React frontend ensures a smooth user experience. It’s designed to be responsive and easy to use.",
     tags: [
       {
         name: "react",
@@ -211,54 +212,54 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "node",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Lahari-nagaraj/Todo_list",
   },
   {
-    name: "Job IT",
+    name: "Musical Beats",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This is a small project built using HTML, CSS, and JavaScript that lets users play musical beats. Different sounds can be triggered with button clicks or keyboard keys, creating a fun and interactive experience. The design is simple, and the functionality makes it easy to experiment with rhythms.",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Lahari-nagaraj/Musical-beats",
   },
   {
-    name: "Trip Guide",
+    name: "Device Tracker",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This real-time device tracker is built using Node.js, Express, Socket.io, and Leaflet for maps. It allows users to track devices dynamically on a map with live updates. Socket.io ensures seamless real-time communication, while Leaflet provides an interactive and responsive mapping experience.",
     tags: [
       {
-        name: "nextjs",
+        name: "node",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "socket.io",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "leaflet",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Lahari-nagaraj/Realtime_device_tracker",
   },
 ];
 

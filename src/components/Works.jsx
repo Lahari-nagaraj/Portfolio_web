@@ -23,7 +23,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[350px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[338px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -76,8 +76,10 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-secondary text-[20px] w-full max-w-5xl text-center px-10 leading-[32px]"
         >
-          Following projects showcase my skill set. I am an aspiring software
-          developer focusing on web development and exploring the field of AI.
+          Here are a few small projects I've worked on, each helping me learn
+          and improve along the way. I enjoy experimenting with new ideas and
+          technologies, and I look forward to building many more in the days to
+          come
         </motion.p>
 
         {/* Project Cards */}
