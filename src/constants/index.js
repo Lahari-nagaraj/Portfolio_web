@@ -115,6 +115,7 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+ 
 ];
 
 const experiences = [
@@ -171,29 +172,27 @@ const experiences = [
 
 const testimonials = [
   {
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+    name: "Codefury",
+    designation: "IEEE",
+    company: "UVCE",
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "Built a disaster management website in a hackathon with unique features for real-time response and resource coordination. Focused on intuitive design and efficient communication. Enhanced accessibility for affected communities and responders",
     
     
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Tried to develop an AI Travel Planner in a 36-hour virtual hackathon using React, Firebase, ShadCN, and Tailwind CSS. Focused on personalized trip recommendations and seamless user experience",
+    name: "Argonyx'24",
+    designation: "RV",
+    company: "University",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Participated in my first MUN under the 'All India Political Parties' domain, gaining valuable insights into debate and politics. It was a great learning experience",
+    name: "Model United Nations",
+    designation: "NITK",
+    company: "Suratkal",
   },
 ];
 
